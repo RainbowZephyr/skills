@@ -1,6 +1,8 @@
 ---
 name: merge-summary
 description: Generate a merge request description from branch commits using the bundled `pull_request_template.md`. The user supplies the MR title and optionally a base branch (default `dev`). Returns raw markdown to copy.
+metadata:
+  version: "1.0.0"
 argument-hint: <mr-title> [--base <branch>]
 disable-model-invocation: true
 allowed-tools: Read, Bash(git log *), Bash(git show *), Bash(git diff *), Bash(git branch *), Bash(git rev-parse *)
